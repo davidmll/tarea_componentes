@@ -1,0 +1,19 @@
+<br />
+<button (click)="mostrarPaises()">Mostrar</button>
+
+<div class="paises">
+  <ul *ngFor="let paises of allPaises">
+    <li>{{paises}}</li>
+  </ul>
+</div>
+
+<button (click)="eliminarPaises()">Eliminar</button>
+
+
+<p>Paises eliminados</p>
+
+<div class="paises">
+  <ul *ngFor="let borrado of arrayBorrado">
+    <li>{{borrado}}</li>
+  </ul>
+</div>

@@ -1,0 +1,15 @@
+.dias{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  color: white;
+  background: rgb(0, 119, 255);
+  border: none;
+  padding: 5px 10px;
+}
+
+button:hover{
+  background-color: blue;
+}

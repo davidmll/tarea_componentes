@@ -1,7 +1,7 @@
 <br />
 <button (click)="mostrarPaises()">Mostrar</button>
 
-<div class="paises">
+<div  *ngIf="content" class="paises">
   <ul *ngFor="let paises of allPaises">
     <li>{{paises}}</li>
   </ul>

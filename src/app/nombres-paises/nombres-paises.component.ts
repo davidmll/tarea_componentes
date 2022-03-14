@@ -12,7 +12,7 @@ export class NombresPaisesComponent implements OnInit {
   isShow : boolean = true;
   elementoBorrado  : any;
   arrayBorrado = new Array();
-
+  content :boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +20,11 @@ export class NombresPaisesComponent implements OnInit {
 
   mostrarPaises(){
 
+    if(this.content === false){
+      this.content = true;
+    }else{
+      this.content = false;
+    }
   }
 
   eliminarPaises(){
